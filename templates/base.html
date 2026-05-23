@@ -82,11 +82,30 @@
         <div>
           {% if social_links %}
             {% for link in social_links %}
-              <a href="{{ link.link }}" target="_blank" rel="noreferrer noopener" class="text-light me-3 footer-social-icon" aria-label="{{ link.platform }}">
-                <i class="fab fa-{{ link.platform|lower }}"></i>
-              </a>
+             <!-- GitHub -->
+<a href="https://github.com/shashank-mishra123"
+   target="_blank"
+   rel="noreferrer noopener"
+   class="text-light me-3 footer-social-icon"
+   aria-label="GitHub">
+
+   <i class="fab fa-github"></i>
+
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/shashank-mishra-3324b1287/?isSelfProfile=false"
+   target="_blank"
+   rel="noreferrer noopener"
+   class="text-light me-3 footer-social-icon"
+   aria-label="LinkedIn">
+
+   <i class="fab fa-linkedin"></i>
+
+</a>
             {% endfor %}
           {% else %}
+          
             <span class="small text-secondary">Add social links in admin to show icons here.</span>
           {% endif %}
         </div>
