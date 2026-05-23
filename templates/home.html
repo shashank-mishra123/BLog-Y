@@ -89,8 +89,26 @@
         <h4 class="font-italic">Follow Us</h4>
         <div class="d-flex flex-wrap gap-3 mt-3">
           {% for i in social_links %}
-            <a href="{{ i.link }}" target="_blank" class="fs-4 text-dark" aria-label="{{ i.platform }}"><i class="fab fa-{{ i.platform|lower }}"></i></a>
           {% endfor %}
+          <!-- GitHub -->
+<a href="https://github.com/shashank-mishra123"
+   target="_blank"
+   class="fs-4 text-dark"
+   aria-label="GitHub">
+
+   <i class="fab fa-github"></i>
+
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/shashank-mishra-3324b1287/?isSelfProfile=false"
+   target="_blank"
+   class="fs-4 text-dark"
+   aria-label="LinkedIn">
+
+   <i class="fab fa-linkedin"></i>
+
+</a>
         </div>
       </div>
     {% endif %}
