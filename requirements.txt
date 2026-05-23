@@ -2,3 +2,4 @@ crispy-bootstrap4
 Django
 django-crispy-forms
 Pillow
+# This is the requirements.txt file for the blogging system project. It lists all the dependencies that are required to run the project. The dependencies include crispy-bootstrap4, Django, django-crispy-forms, and Pillow. These packages are necessary for the functionality of the blogging system, such as handling forms, managing the database, and processing images.  
