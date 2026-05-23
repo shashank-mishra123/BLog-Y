@@ -8,7 +8,7 @@ from django.db.models import Q
 
 def posts_by_category(request, category_id):
     # Fetch the posts that belongs to the category with the id category_id
-    posts = Blog.objects.filter(status='Published', category=category_id)
+    posts = Blog.objects.filter(status='Published', category=category_id).order_by('-created_at')
     # Use try/except when we want to do some custom action if the category does not exists
     # try:
     #     category = Category.objects.get(pk=category_id)
@@ -37,7 +37,7 @@ def blogs(request, slug):
         return HttpResponseRedirect(request.path_info)
 
     # Comments
-    comments = Comment.objects.filter(blog=single_blog)
+    comments = Comment.objects.filter(blog=single_blog).order_by('-created_at')
     comment_count = comments.count()
     
     context = {

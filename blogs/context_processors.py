@@ -7,5 +7,5 @@ def get_categories(request):
 
 
 def get_social_links(request):
-    social_links = SocialLink.objects.all()
+    social_links = SocialLink.objects.filter(link__isnull=False).exclude(link__exact='').order_by('platform')
     return dict(social_links=social_links)
