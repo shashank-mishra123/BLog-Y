@@ -169,4 +169,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# End of https://www.toptal.com/developers/gitignore/api/django
+# End of https://www.toptal.com/developers/gitignore/api/django  
+# This .gitignore file is used to specify which files and directories should be ignored by Git when committing changes to the repository. It helps to keep the repository clean and free from unnecessary files that are not relevant to the project, such as log files, compiled Python files, virtual environment directories, etc.
