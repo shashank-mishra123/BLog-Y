@@ -66,3 +66,4 @@ def logout(request):
     auth.logout(request)
     messages.success(request, 'You have logged out successfully.')
     return redirect('home')
+# commented out the dashboard view since it's not implemented yet
